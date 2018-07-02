@@ -34,7 +34,7 @@ gulp.task('image', function () {
 });
 
 
-gulp.task('webp-lossless', () =>
+gulp.task('webp', () =>
   gulp.src('img/*.jpg')
     .pipe(webp({
       lossless: false,

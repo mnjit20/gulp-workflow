@@ -6,5 +6,8 @@
 It will continuously watch the changes in the defined workflow files.
 
 ### `gulp image`
-It will compress the images to quality 80 using the mozjpeg library
+It will compress the images to quality 75 using the mozjpeg library
+
+### `gulp webp`
+It will compress all the images to quality 75 using the webP library
 
