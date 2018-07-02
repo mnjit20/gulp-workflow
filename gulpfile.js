@@ -10,6 +10,11 @@ gulp.task('scripts', function () {
 
 });
 
+//Watch task
+gulp.task('watch', function () {
+  gulp.watch('js/*.js', ['scripts']);
+});
+
 //Styles task
 gulp.task('styles', function () {
   console.log('style task');
@@ -17,4 +22,4 @@ gulp.task('styles', function () {
 
 //gulp defualt task
 //passing multiple tasks names as the array, and all are getting executed
-gulp.task('default', ['scripts', 'styles']);
+gulp.task('default', ['scripts', 'styles', 'watch']);
