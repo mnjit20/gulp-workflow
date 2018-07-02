@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
+const webp = require('gulp-webp');
+
 
 //Script task
 //uglify
@@ -24,13 +26,22 @@ gulp.task('styles', function () {
 
 //Image task
 gulp.task('image', function () {
-  gulp.src('img/*')
+  gulp.src('img/*.jpg')
     .pipe(imagemin([imageminMozjpeg({
-      quality: 80
+      quality: 75
     })]))
     .pipe(gulp.dest('build/img'))
 });
 
+
+gulp.task('webp-lossless', () =>
+  gulp.src('img/*.jpg')
+    .pipe(webp({
+      lossless: false,
+      quality: 75
+    }))
+    .pipe(gulp.dest('build/img'))
+);
 
 
 //gulp defualt task
