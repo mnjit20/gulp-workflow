@@ -4,3 +4,7 @@
 
 ### `gulp watch`
 It will continuously watch the changes in the defined workflow files.
+
+### `gulp image`
+It will compress the images to quality 80 using the mozjpeg library
+
