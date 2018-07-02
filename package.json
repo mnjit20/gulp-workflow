@@ -1,0 +1,22 @@
+{
+  "name": "gulp_setup",
+  "version": "1.0.0",
+  "description": "\"# gulp-workflow\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnjit20/gulp-workflow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnjit20/gulp-workflow/issues"
+  },
+  "homepage": "https://github.com/mnjit20/gulp-workflow#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
